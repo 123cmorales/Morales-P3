@@ -36,7 +36,7 @@ const vue_app = Vue.createApp({
             /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
          title : 'IMDB + Chris’s Top 8 Movies',
          owner : 'Chris',
-         url: 'https://github.com/123cmorales/NJIT-3_StarterFiles-master',
+         url: 'https://github.com/123cmorales/Morales-P3',
       }
     },
       methods: {

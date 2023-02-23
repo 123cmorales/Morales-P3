@@ -25,7 +25,7 @@
 	    <div class="header">
 
 	      <div class="container">
-	        <h1 id="app_title">%title%</h1>
+	        <h1 id="app_title">{{ title }}</h1>
 	      </div>
 
 	    </div>
@@ -37,10 +37,10 @@
 	        <div class="col-md-6">
 	            <div class="thumbnail">
 
-						<img class="poster img-fluid" />
+						<img class="poster img-fluid" :src="movies.img" :alt="movies.titles" />
 						<div class="imageInfo">%posterindex%</div>
 
-						<p class="title">%title% (%country%)</p>
+						<p class="title">(% title%) (%country%)</p>
 						<p class="score"><i class="bi bi-star" aria-hidden="true"></i> %iscore% </p>
 						<p class="runtime">Runtime: %runtime%</p>
 						<p class="released">Released: %released% | Rated: %rating%</p>
@@ -58,12 +58,43 @@
 
 	    <div class="footer">
 	      <div class="container">
-			<a id="github" class="btn btn-lg btn-warning">
-				<i class="bi bi-github me-2"></i>%owner%
+			<a id="github" class="btn btn-lg btn-warning" v-bind:href="url" target="_blank">
+				<i class="bi bi-github me-2"></i>{{ owner }}
 	  		</a>
 	      </div>
 	    </div>
 	</div>
+
+	<!-- <div id="app">
+  
+		<a v-bind:href="url" target="_blank">Best Man Ever</a>
+		<div v-if="showBooks">
+		<li v-for="book in books" :class="{ fav: book.isFav}" @click="toggleFav(book)">
+			<img :src="book.img" :alt="book.title">
+			<h3>{{ book.title }}</h3>
+			<p>{{ book.author }}</p>
+		</li>
+	</uL>
+	</div>`
+	
+	 <p>{{ books[0].title }} - {{ books[0].author }} - {{ age }} </p> 
+	<button @click="toggleShowBooks">
+		<span v-if="showBooks">Hide Books</span>
+		<span v-if="!showBooks">Show Books</span> 
+		<span v-else>Show Books</span>
+	</button>
+	<div v-show="showBooks">currently showing books</div>
+	<br>
+	 Mouse events
+	<div class="box" @mouseover="handleEvent($event, 5)">mouseover (enter)</div>
+	<div class="box" @mouseleave="handleEvent">mouseleave</div>
+	<div class="box" @dblclick="handleEvent">double click</div>
+	<div class="box" @mousemove="handleMousemove">positon - {{ x }} {{ y }}</div>
+	v-on is a directive that lets us use onclick -->
+	<!--<button v-on:click="age++">increase age</button>
+	<button v-on:click="age--">decrease age</button>
+	<div @click="changeTitle('Pinkman')">new title</div>
+	</div> -->
 
   	<!-- This load the Vue.js code -->
 	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>

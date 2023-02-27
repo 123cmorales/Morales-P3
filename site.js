@@ -43,7 +43,7 @@ const vue_app = Vue.createApp({
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
       }
 })
-
+console.log('vue_app')
 vue_app.mount("#vue_app")
 
 // const app = Vue.createApp({

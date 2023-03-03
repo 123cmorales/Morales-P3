@@ -68,5 +68,47 @@
             "likes": 812,
             "dislikes": 101,
             "posterindex": 0
+      },
+      {
+            "title": "The Batman",
+            "iscore": 7.8,
+            "rating": "PG-13",
+            "runtime": 167,
+            "released": [2022, 3, 4],
+            "country": "USA",
+            "posters": ["img/Batman.jpg", "img/Batman2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt1877830/",
+            "website": "https://www.thebatman.com/",
+            "likes": 10000,
+            "dislikes": 0,
+            "posterindex": 0
+      },
+      {
+            "title": "Cars",
+            "iscore": 7.2,
+            "rating": "G",
+            "runtime": 117,
+            "released": [2006, 6, 9],
+            "country": "USA",
+            "posters": ["img/cars.webp", "img/cars2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0317219/",
+            "website": "https://www.thebatman.com/",
+            "likes": 1003,
+            "dislikes": 240,
+            "posterindex": 0
+      },
+      {
+            "title": "Minions: The Rise of Gru",
+            "iscore": 6.5,
+            "rating": "PG",
+            "runtime": 90,
+            "released": [2022, 7, 1],
+            "country": "USA",
+            "posters": ["img/minions2.webp", "img/Minions.jpg"],
+            "imdb": "https://www.imdb.com/title/tt5113044/",
+            "website": "https://www.minionsmovie.com/",
+            "likes": 1003,
+            "dislikes": 240,
+            "posterindex": 0
       }
 ]

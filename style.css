@@ -124,7 +124,7 @@ body {
     background-color: #008700;
     color: #ffffff;
 }
-.likes :hover {
+.likes:hover {
     background-color: #9edd86;
     color:  #008700;
 }
@@ -132,7 +132,7 @@ body {
     background-color: #f65a5b;
     color: #ffffff;
 }
-.dislikes  :hover {
+.dislikes:hover {
     background-color: #fdd6d6;
     color: #F65A5B;
 }
